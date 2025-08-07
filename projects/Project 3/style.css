@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f8f8f8;
+    padding: 50px 0;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+}
+
+.hero-content p {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #ff3b3f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Features */
+.features {
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.features-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.feature i {
+    font-size: 40px;
+    color: #ff3b3f;
+    margin-bottom: 10px;
+}
+
+/* Gallery with Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: nowrap;
+}
+
+.image-item {
+    text-align: center;
+    width: 180px;
+}
+
+.image-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+/* Reviews */
+.reviews {
+    padding: 50px 0;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.review-slider {
+    max-width: 600px;
+    margin: auto;
+}
+
+.review {
+    display: none;
+}
+
+.review.active {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}

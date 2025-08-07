@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+#addTaskBtn {
+    padding: 10px 15px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#addTaskBtn:hover {
+    background-color: #27ae60;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.filter-btn.active {
+    background-color: #3498db;
+    color: white;
+}
+
+#taskList {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.task-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    opacity: 0.7;
+}
+
+.task-text {
+    flex: 1;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.task-counter {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Checkbox styling */
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+    background-color: #2ecc71;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Responsive design */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .input-container {
+        flex-direction: column;
+    }
+    
+    #taskInput {
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    
+    #addTaskBtn {
+        border-radius: 4px;
+        width: 100%;
+    }
+    
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+}

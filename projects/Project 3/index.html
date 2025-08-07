@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirGlow - LED Smart Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="/projects/Project 3/img/favicon.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AirGlow</div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Light Up Your Steps</h1>
+                <p>The future of footwear is here with AirGlow smart sneakers</p>
+                <a href="#order" class="btn">Pre-Order Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="/projects/Project 3/img/Air_Glow_sneakers_resized.png" alt="AirGlow Sneakers" id="main-product-image">
+                <div class="color-options">
+                    <span class="color-option red active" data-image="red-shoe.jpg"></span>
+                    <span class="color-option blue" data-image="blue-shoe.jpg"></span>
+                    <span class="color-option green" data-image="green-shoe.jpg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Smart Features</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Customizable LEDs</h3>
+                    <p>Choose from 16 million colors and multiple lighting patterns via our mobile app.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-battery-full"></i>
+                    <h3>Long Battery Life</h3>
+                    <p>Up to 72 hours of continuous use on a single charge.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Control</h3>
+                    <p>Connect via Bluetooth to customize settings and create light shows.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tint"></i>
+                    <h3>Water Resistant</h3>
+                    <p>IP67 rating means they can handle rain and splashes with ease.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="/projects/Project 3/img/air-sneakers-in-action_resized.png" alt="AirGlow in action">
+                    <p>AirGlow in action</p>
+                </div>
+                <div class="image-item">
+                    <img src="/projects/Project 3/img/color-option4_resized.png" alt="AirGlow color options">
+                    <p>AirGlow color options</p>
+                </div>
+                <div class="image-item">
+                    <img src="/projects/Project 3/img/color-option3_resized.png" alt="AirGlow color options">
+                    <p>AirGlow color options</p>
+                </div>
+                <div class="image-item">
+                    <img src="/projects/Project 3/img/color-option2_resized.png" alt="AirGlow color options">
+                    <p>AirGlow color options</p>
+                </div>
+                <div class="image-item">
+                    <img src="/projects/Project 3/img/app-interface_resized.png" alt="AirGlow app interface">
+                    <p>AirGlow app interface</p>
+                </div>
+                <div class="image-item">
+                    <img src="/projects/Project 3/img/Air_Glow_sneakers_resized.png" alt="AirGlow night view">
+                    <p>AirGlow night view</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="review-slider">
+                <div class="review active">
+                    <p>"These shoes are amazing! I get compliments everywhere I go."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>- Jamie S.</span>
+                </div>
+                <div class="review">
+                    <p>"The battery life is incredible and the app is super easy to use."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span>- Alex M.</span>
+                </div>
+                <div class="review">
+                    <p>"My kids love them! Perfect for night walks and festivals."</p>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>- Taylor R.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Sign up for news and exclusive offers</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">AirGlow</div>
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+            </div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="copyright">© 2025 AirGlow. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
