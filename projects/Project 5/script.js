@@ -17,9 +17,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         
         if (currentTheme === 'dark') {
-            document.documentElement.removeAttribute('data-theme');
-            localStorage.setItem('theme', 'light');
-            icon.classList.replace('fa-sun', 'fa-moon');
+            document.documentElement.removeAttribute('data-theme', 'dark');
+            localStorage.setItem('theme', 'light', 'dark');
+            icon.classList.replace('fa-sun', 'fa-moon','fa-sun');
         } else {
             document.documentElement.setAttribute('data-theme', 'dark');
             localStorage.setItem('theme', 'dark');
